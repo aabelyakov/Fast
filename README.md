@@ -1,0 +1,2 @@
+# Fast
+Работа с FastAPI
