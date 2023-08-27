@@ -7,10 +7,12 @@ from fastapi import FastAPI, Depends
 
 app = FastAPI()
 
+
 @app.get('/')
 async def root():
-    return {'message': 'Hello World!'}
-# enddef
+    return {'message1': 'Hello World!'}
+#enddef
+
 
 # В терминале ввести:
 # uvicorn main:app --reload
@@ -18,8 +20,8 @@ async def root():
 # uvicorn app.app:app --reload
 
 # или добавить в текст программы эту конструкцию
-# if __name__ == "__main__":
-#     uvicorn.run(app, host="0.0.0.0", port=8000)
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
     # Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 # endif
 

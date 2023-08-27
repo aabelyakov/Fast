@@ -3,8 +3,11 @@ import signal
 import fastapi
 import uvicorn
 
+# print(dir(fastapi))
+
 app = fastapi.FastAPI()
 
+# print(dir(app))
 
 def hello():
     return fastapi.Response(status_code=200, content='Hello, world!')
@@ -12,12 +15,7 @@ def hello():
 
 def shutdown():
     os.kill(os.getpid(), signal.SIGTERM)
-    return fastapi.Response(status_code=200, content='Server shutting down...')
-
-
-@app.on_event('shutdown')
-def on_shutdown():
-    print('Server shutting down...')
+    return fastapi.Response(status_code=200, content='Application shutdown complete')
 
 
 app.add_api_route('/hello', hello, methods=['GET'])
