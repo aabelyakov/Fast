@@ -11,7 +11,6 @@ app = FastAPI()
 @app.get('/')
 async def root():
     return {'message1': 'Hello World!'}
-#enddef
 
 
 # В терминале ввести:

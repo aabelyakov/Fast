@@ -3,7 +3,7 @@ import signal
 import fastapi
 import uvicorn
 
-# print(dir(fastapi))
+
 
 app = fastapi.FastAPI()
 
