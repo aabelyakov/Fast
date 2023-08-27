@@ -10,10 +10,12 @@ app = FastAPI()
 @app.get('/')
 async def root():
     return {'message': 'Hello World!'}
-#enddef
+# enddef
 
 # В терминале ввести:
 # uvicorn main:app --reload
+# uvicorn app.app:app --host 0.0.0.0 --port 8080
+# uvicorn app.app:app --reload
 
 # или добавить в текст программы эту конструкцию
 # if __name__ == "__main__":
