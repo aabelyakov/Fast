@@ -14,12 +14,12 @@ class Place(BaseModel):
     lng: float
 
     class Config:
-        orm_mode = True
-
+        # orm_mode = True
+        from_attributes = True
 @app.post('/places/')
 async def create_place_view(place: Place):
     return place
 
 @app.get('/')
 async def root():
-    return {'message': 'Hello World!'}
+    return {'mes': 'Hello World!'}
