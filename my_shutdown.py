@@ -7,6 +7,7 @@ import uvicorn
 import os
 import signal
 from fastapi import FastAPI
+import fastapi
 
 app = FastAPI()
 

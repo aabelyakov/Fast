@@ -22,6 +22,7 @@ async def root():
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
     # Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+    # (нажмите CTRL+C, чтобы выйти)
 # endif
 
 # Запустите браузер по адресу http://127.0.0.1:8000/docs

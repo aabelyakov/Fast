@@ -27,7 +27,7 @@ async def create_place_view(place: Place):
 
 @app.get('/')
 async def root():
-    return {'mes': 'Hello World!'}
+    return {'Root': 'Вы в корне сайта'}
 
 
 if __name__ == "__main__":
